@@ -25,7 +25,7 @@ contract Cat is Animal, get{
         return "Meow!!";
     }
     
-    function getHeadnumber() public override view returns(uint8) {
+    function getHeadNumber() public override view returns(uint8) {
         return head;
     }
 }

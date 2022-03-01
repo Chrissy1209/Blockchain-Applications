@@ -1,10 +1,10 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-contract referenceTypes {
+contract ReferenceTypes {
     uint8[] members;
 
-    function Members() public{
+    function member() public{
         members[0] = 1;
         members[1] = 2;
     }
