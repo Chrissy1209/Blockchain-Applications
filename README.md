@@ -1,3 +1,3 @@
-<h2> solidity- personal practice </h2>
+<h2> Solidity-- Individual Exercise </h2>
 
-use Remix IDE to practice Smart Contract.
+Use Remix IDE to practice Smart Contracts.
