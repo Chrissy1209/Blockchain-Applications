@@ -13,7 +13,7 @@ contract Owner {
         if(msg.sender == owner) 
             name = _name;
         else 
-            revert("Permission Denied.");
+            revert("Permission Denied."); //終止並不退還gas
     }
 
     function getName() public view returns(string memory) {

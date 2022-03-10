@@ -2,16 +2,16 @@
 pragma solidity ^0.8.7;
 
 contract MyValue {
-    string value;
+    bytes value;
     constructor() {
         value = "MyValue";
     }
 
-    function setValue(string memory _value) public {
+    function setValue(bytes memory _value) public {
         value = _value;
     }
 
-    function getValue() public view returns(string memory) {
+    function getValue() public view returns(bytes memory) {
         return value;
     }
 }

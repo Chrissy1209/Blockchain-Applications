@@ -1,16 +1,16 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-contract ReferenceTypes {
+contract DataLocation {
     uint8[] members;
 
-    function member() public{
+    function setMembers() public{
         members[0] = 1;
         members[1] = 2;
     }
 
     function setMembersByStorage() public {
-        uint8[] storage myArr = members;
+        uint8[] storage myArr = members; //local storage ref
         myArr[0] = 0;    
     }
 
