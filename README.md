@@ -1,3 +1,4 @@
 <h2> Solidity -- Individual Exercises </h2>
 
-Use Remix IDE to practice Smart Contracts.
+使用Remix IDE實作智能合約編寫、並部署至Ethereum Testnet Kintsugi
+Metamask Address:  0x530a17E61B8B0f34Bf2521c78e2fcD1df8365582
