@@ -5,12 +5,12 @@ contract StudentScores {
     mapping(string => uint) scores;
     string[] public names;
 
-    function addScore(string memory name, uint score) public {
+    function addScore(string calldata name, uint score) public {
         scores[name] = score;
         names.push(name);
     }
 
-    function getScore(string memory name) public view returns(uint) {
+    function getScore(string calldata name) public view returns(uint) {
         return scores[name];
     }
 
