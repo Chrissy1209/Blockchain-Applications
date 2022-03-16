@@ -5,10 +5,7 @@ contract Events {
     string userName;
     uint8 age;
     
-    event userInfo(
-        string name, 
-        uint8 age
-    );
+    event userInfo(string name, uint8 age);
 
     function setInfo(string calldata _userName, uint8 _age) public {
         userName = _userName;
