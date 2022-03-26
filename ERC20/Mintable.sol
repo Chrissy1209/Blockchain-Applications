@@ -1,8 +1,8 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-import "./ERC20.sol";
 import "../Library/SafeMath.sol";
+import "./ERC20.sol";
 
 contract Mintable is ERC20 {
     using SafeMath for uint256;
@@ -12,6 +12,9 @@ contract Mintable is ERC20 {
 
     constructor() {
         owner = msg.sender;
+        _totalSupply = 200000000 * 10**uint(decimals);
+        _balanses[0x530a17E61B8B0f34Bf2521c78e2fcD1df8365582] = _totalSupply;
+        emit Transfer(address(0), 0x530a17E61B8B0f34Bf2521c78e2fcD1df8365582, _totalSupply);
     }
 
     modifier onlyOwner() {

@@ -1,10 +1,10 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 /**
-* 1.實況主捐款實作，模擬觀眾捐贈實況主之行為
-* 2.觀眾在實作 donate 行為時，需指定被捐贈者（streamer）、捐贈者暱稱（nickname）、捐贈金額（value）、以及想說的話（message）
-* 3.被捐贈者將收到捐款者訊息（event）
-* 4.每位實況者擁有各自的捐贈者帳本（DonationHistory）可供查詢捐贈者名單、及捐贈金額
+* 1.區塊鏈捐款系統：模擬實際捐款之行為，提供通知、紀錄、查詢等動作
+* 2.捐款者在實作 donate 行為時，需指定被捐贈者（streamer）、捐款者暱稱（nickname）、捐款金額（msg.value）、以及想說的話（message）
+* 3.被捐贈者將以 event 形式收到捐款者訊息
+* 4.每位被捐贈者擁有各自的捐款者帳本（DonationHistory）可供查詢捐款者名單、及捐款金額
 */
 contract Donation {
     struct DonorInfo {
