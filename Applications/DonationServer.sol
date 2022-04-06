@@ -6,7 +6,7 @@ pragma solidity ^0.8.7;
 * 3.被捐贈者將以 event 形式收到捐款者訊息
 * 4.每位被捐贈者擁有各自的捐款者帳本（DonationHistory）可供查詢捐款者名單、及捐款金額
 */
-contract Donation {
+contract DonationServer {
     struct DonorInfo {
         address[] donors;
         mapping(address => uint) amount;
